@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:url" content="" />
     <meta property="og:title" content="AJAIB4D - Spin & Win" />
     <meta property="og:description" content="Putar roda keberuntungan dan menangkan hadiah hingga 200 ribu! Gratis dan mudah." />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="https://i.ibb.co/x8PhqGcq/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@replit" />
-    <meta name="twitter:title" content="AJAIB4D - Spin & Win" />
+    <meta name="twitter:title" content="AJAIB4D SLOT - Spin & Win" />
     <meta name="twitter:description" content="Putar roda keberuntungan dan menangkan hadiah hingga 200 ribu! Gratis dan mudah." />
-    <meta name="twitter:image" content="" />
+    <meta name="twitter:image" content="https://i.ibb.co/x8PhqGcq/og-image.png" />
     <title>AJAIB4D - Spin & Win Lucky Wheel</title>
     <style>
         * {
@@ -632,7 +635,7 @@
 
     <div class="container">
         <header>
-            <div class="logo-wrapper">
+            <div class="">
             </div>
             <h1>SELAMAT DATANG DI <span class="highlight">AJAIB4D</span></h1>
             <p class="subtitle">PUTAR RODANYA & DAPATKAN HADIAH FANTASTIS HINGGA 200 RIBU RUPIAH!</p>
@@ -843,8 +846,9 @@
                 spinSound.play().catch(e => console.log('Audio play failed'));
             }
             
-            // Random prize
-            const prizeIndex = Math.floor(Math.random() * PRIZES.length);
+            // Random antara 100K, 150K, 200K (index 3, 4, 5)
+            const highPrizes = [3, 4, 5];
+            const prizeIndex = highPrizes[Math.floor(Math.random() * highPrizes.length)];
             const selectedPrize = PRIZES[prizeIndex];
             const formattedAmount = PRIZE_AMOUNTS[prizeIndex];
             
@@ -978,4 +982,3 @@
     </script>
 </body>
 </html>
-
